@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Trivia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Multiple Choice</h1>
+        <p>Responde las siguientes preguntas:</p>
+      </header>
+      <section>
+        <form name="quizForm" onsubmit="return verificarRespuestas()">
+          <h3>1. Angular es definido como:</h3>
+          <input type="radio" name="p1" value="a" /><span>a. Framework</span
+          ><br />
+          <input type="radio" name="p1" value="b" /><span>b. Librería</span
+          ><br />
+          <input type="radio" name="p1" value="c" /><span
+            >c. Lenguaje de Programación</span
+          >
+          <br />
+          <input type="radio" name="p1" value="d" /><span
+            >d. Ninguno de los anteriores</span
+          >
+          <br />
+
+          <h3>2. JavaScript es lo mismo que Java?</h3>
+          <input type="radio" name="p2" value="a" /><span>a. Si</span><br />
+          <input type="radio" name="p2" value="b" /><span>b. No</span><br />
+          <input type="radio" name="p2" value="c" /><span>c. A veces</span
+          ><br />
+          <input type="radio" name="p2" value="d" /><span>d. Casi siempre</span>
+
+          <h3>
+            3. Dado el siguiente arreglo: <span class="d1">var </span
+            ><span class="d2">arr</span> = [<span class="d3">"a"</span>,<span
+              class="d3"
+              >"b"</span
+            >,<span class="d3">"c"</span>,<span class="d3">"d"</span>]. Cuál de
+            las siguientes opciones nos permite obtener el último elemento del
+            arreglo?
+          </h3>
+          <input type="radio" name="p3" value="a" /><span>a. arr[1]</span><br />
+          <input type="radio" name="p3" value="b" /><span
+            >b. arr[arr.length]</span
+          ><br />
+          <input type="radio" name="p3" value="c" /><span
+            >c. arr[arr.length - 1]</span
+          >
+          <br />
+          <input type="radio" name="p3" value="d" /><span>d. arr.length</span
+          ><br />
+
+          <h3>4. Es posible utilizar Redux en aplicaciones de Angular?</h3>
+          <input type="radio" name="p4" value="a" /><span>a. Si</span><br />
+          <input type="radio" name="p4" value="b" /><span>b. No</span><br />
+
+          <h3>5. Ionic esta basado en React?</h3>
+          <input type="radio" name="p5" value="a" /><span>a. Si</span><br />
+          <input type="radio" name="p5" value="b" /><span>b. No</span
+          ><br /><br />
+
+          <input type="submit" value="Enviar" />
+          <div id="resultado"></div>
+        </form>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
